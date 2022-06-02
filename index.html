@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tubes TBA Kelompok 9</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <section class="hero">
+        <h1 class="title">Program Lexical Analyzer & Parser</h1>
+        <p class="desc-top">Crafted by: Kelompok 9</p>
+        <p class="desc">Muhamad Rafli Susanto - 1301204052</p>
+        <p class="desc">Kamil Elian Zhafran - 1301204052</p>
+    </section>
+    <section class="program">
+        <div class="card">
+            <h4 class="card-title">Lexical Analyzer</h4>
+
+            <label for="">Kata</label>
+            <input type="text" name="text" id="id-kata" placeholder="Masukkan kata" required>
+            <input type="button" id="btn-submit-kata" onclick="addHasil()" pys-onClick="lexAnalyzer" value="Submit">
+            
+            <div id="list-output-container" class=""></div>
+
+            <template id="output-template">
+                <section class="output">
+                    <p></p>
+                </section>
+            </template>
+
+            <input type="button" id="btn-clear" pys-onClick="clearInput" value="Clear Output">
+        </div>
+    </section>
+    <py-script src="py/lexical_analyzer.py"></py-script>
+    <script>
+        function addHasil() {
+            document.getElementById("list-output-container").innerHTML += "<p><br><b>Hasil: </b></p>";
+        }
+    </script>
+</body>
+</html>
