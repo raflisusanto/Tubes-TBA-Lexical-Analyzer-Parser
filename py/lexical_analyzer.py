@@ -8,7 +8,7 @@ def lexAnalyzer(*args, **kwargs):
     input_string = sentence+'#'
     alphabet_list = list(string.ascii_lowercase)
     alphabet_list_upper = list(string.ascii_uppercase)
-    state_list = ['q0', 'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8']
+    state_list = ['q' + str(i) for i in range(42)]
 
     transition_table = {}
 
