@@ -18,7 +18,7 @@
     </section>
     <section class="program">
         <div class="card">
-            <h4 class="card-title">Lexical Analyzer</h4>
+            <h4 class="card-title">Lexical Analyzer & Parser</h4>
 
             <label for="">Kata</label>
             <input type="text" name="text" id="id-kata" placeholder="Masukkan kata" required>
@@ -32,10 +32,10 @@
                 </section>
             </template>
 
-            <input type="button" id="btn-clear" pys-onClick="clearInput" value="Clear Output">
+            <input type="button" id="btn-clear" pys-onClick="clearOutput" value="Clear Output">
         </div>
     </section>
-    <py-script src="py/lexical_analyzer.py"></py-script>
+    <py-script src="py/lexical_analyzer_parser.py"></py-script>
     <script>
         function addHasil() {
             document.getElementById("list-output-container").innerHTML += "<p><br><b>Hasil: </b></p>";
